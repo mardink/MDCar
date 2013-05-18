@@ -7,6 +7,12 @@
 
 defined('_JEXEC') or die();
 
+require_once JPATH_COMPONENT_ADMINISTRATOR.'/liveupdate/liveupdate.php';
+if(JRequest::getCmd('view','') == 'liveupdate') {
+    LiveUpdate::handleRequest();
+    return;
+}
+
 require_once JPATH_LIBRARIES.'/fof/include.php';
 
 FOFDispatcher::getTmpInstance('com_mdcar')->dispatch();

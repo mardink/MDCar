@@ -11,6 +11,7 @@
 	<fieldset name="basic_configuration"
 		label="COM_MDCAR_CARS_GROUP_BASIC"
 	>
+
 		<field name="kenteken" type="text"
 			label="COM_MDCAR_CARS_FIELD_KENTEKEN"
 			description="COM_MDCAR_CARS_FIELD_KENTEKEN_DESC"
@@ -19,7 +20,7 @@
 		/>
 		
 		<field name="merk" type="text"
-			label="COM_MDCAR_CATEGORIES_FIELD_MERK"
+			label="COM_MDCAR_CARS_FIELD_MERK"
 			description="COM_MDCAR_CARS_FIELD_MERK_DESC"
 			class="input-large"
 			required="true"

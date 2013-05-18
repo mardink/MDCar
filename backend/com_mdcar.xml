@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="component" method="upgrade">
+	<name>MDCar</name>
+	<creationDate>17-05-2013</creationDate>
+	<author>Martijn Hiddink</author>
+	<authorEmail>support@mardinkwebdesign.com</authorEmail>
+	<authorUrl>http://www.mardinkwebdesign.com</authorUrl>
+	<copyright>Copyright (c)2013 Martijn Hiddink / MardinkWebdesign.com</copyright>
+	<license>GNU GPL v3 or later</license>
+	<version>1.0.0</version>
+	<description>A joomla! component to keep an administration of the fuel consumption of your cars</description>
+
+	<!-- Public front end files -->
+	<files folder="frontend">
+		<filename>mdcar.php</filename>
+		
+		<folder>controllers</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+	<!-- Front end translation files -->
+	<languages folder="language/frontend">
+		<language tag="en-GB">en-GB/en-GB.com_mdcar.ini</language>
+	</languages>
+
+	<!-- SQL query files to execute on installation -->
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/install.sql</file>
+			<file driver="mysql">sql/install/mysql/install.sql</file>
+			<file driver="mysqli" charset="utf8">sql/install/mysql/install.sql</file>
+			<file driver="mysqli">sql/install/mysql/install.sql</file>
+		</sql>
+	</install>
+
+	<!-- SQL query files to execute on uninstallation -->
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">sql/install/mysql/uninstall.sql</file>
+			<file driver="mysql">sql/install/mysql/uninstall.sql</file>
+			<file driver="mysqli" charset="utf8">sql/install/mysql/uninstall.sql</file>
+			<file driver="mysqli">sql/install/mysql/uninstall.sql</file>
+		</sql>
+	</uninstall>
+	
+	<!-- SQL files to run on update -->
+	<!--
+	<update>
+		<schemas>
+			<schemapath type="mysql">sql/updates/mysql</schemapath>
+		</schemas>
+	</update>
+	-->
+	
+	<!-- Media files -->
+	<media destination="com_mdcar" folder="media">
+		<folder>images</folder>
+	</media>
+
+	<!-- Administrator back-end section -->
+	<administration>
+		<!-- Administration menu -->
+		<menu view="items"
+			img="../media/com_mdcar/images/contactus-16.png">COM_MDCar</menu>
+
+		<!-- Back-end files -->
+		<files folder="backend">
+			<folder>sql</folder>
+			<folder>views</folder>
+            <folder>liveupdate</folder>
+
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>mdcar.php</filename>
+			<filename>fof.xml</filename>
+            <filename>script.mdcar.php</filename>
+		</files>
+
+		<!-- Back-end translation files -->
+		<languages folder="language/backend">
+			<language tag="en-GB">en-GB/en-GB.com_mdcar.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_mdcar.sys.ini</language>
+		</languages>
+
+	</administration>
+
+	<!-- Installation / uninstallation script file -->
+<scriptfile>script.mdcar.php</scriptfile>
+
+	<!-- Update servers -->
+
+	<updateservers>
+        <server type="extension" priority="1" name="mdcontact"><![CDATA[http://www.mardinkwebdesign.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=10&dummy=extension.xml]]></server>
+	</updateservers>
+
+</extension>
