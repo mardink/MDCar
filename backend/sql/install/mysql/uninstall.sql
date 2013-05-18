@@ -1,2 +1,2 @@
-DROP TABLE IF EXISTS `#__contactus_categories`;
-DROP TABLE IF EXISTS `#__contactus_items`;
+DROP TABLE IF EXISTS `#__mdcar_cars`;
+DROP TABLE IF EXISTS `#__mdcar_receipts`;

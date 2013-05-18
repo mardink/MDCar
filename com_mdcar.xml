@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension version="2.5" type="component" method="upgrade">
-	<name>Contactus</name>
+	<name>MDCar</name>
 	<creationDate>17-05-2013</creationDate>
 	<author>Martijn Hiddink</author>
 	<authorEmail>support@mardinkwebdesign.com</authorEmail>
@@ -8,7 +8,7 @@
 	<copyright>Copyright (c)2013 Martijn Hiddink / MardinkWebdesign.com</copyright>
 	<license>GNU GPL v3 or later</license>
 	<version>1.0.0</version>
-	<description>A component to administrare car petrol consumption</description>
+	<description>A joomla! component to keep an administration of the fuel consumption of your cars</description>
 
 	<!-- Public front end files -->
 	<files folder="frontend">
@@ -88,9 +88,9 @@
 <scriptfile>script.mdcar.php</scriptfile>
 
 	<!-- Update servers -->
-	<!--
+
 	<updateservers>
-		<server type="extension" priority="1" name="Contact Us"><![CDATA[http://www.example.com/contactus.xml]]></server>
+        <server type="extension" priority="1" name="mdcontact"><![CDATA[http://www.mardinkwebdesign.com/index.php?option=com_ars&view=update&task=stream&format=xml&id=10&dummy=extension.xml]]></server>
 	</updateservers>
-	-->
+
 </extension>

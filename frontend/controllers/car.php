@@ -1,17 +1,15 @@
 <?php
 /**
- * @package		contactus
- * @copyright	Copyright (c)2013 Nicholas K. Dionysopoulos / AkeebaBackup.com
+ * @package		MDCar
+ * @copyright	Copyright (c)2013 Martijn Hiddink / MardinkWebdesign.com
  * @license		GNU General Public License version 2 or later
  */
-
 defined('_JEXEC') or die();
 
-class ContactusControllerItem extends FOFController
+class MdcarControllerCar extends FOFController
 {
 	protected function onAfterSave()
 	{
-		$this->setRedirect(JRoute::_('index.php?option=com_contactus&view=thankyou'));
-		return true;
+			return true;
 	}
 }

@@ -1,11 +1,11 @@
 <?php
 /**
- * @package		contactus
- * @copyright	Copyright (c)2013 Nicholas K. Dionysopoulos / AkeebaBackup.com
+ * @package		MDCar
+ * @copyright	Copyright (c)2013 Martijn Hiddink / MardinkWebdesign.com
  * @license		GNU General Public License version 2 or later
  */
 
-class ContactusModelItems extends FOFModel
+class MdcarModelCars extends FOFModel
 {
 	/**
 	 * This method is only called after a record is saved. We will hook on it
