@@ -6,10 +6,10 @@
  */
 defined('_JEXEC') or die();
 
-class MdcarControllerCar extends FOFController
+class MdcarControllerCars extends FOFController
 {
-	protected function onAfterSave()
-	{
-			return true;
-	}
+    protected function onBeforeBrowse()
+    {
+        return true;
+    }
 }

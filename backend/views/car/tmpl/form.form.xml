@@ -5,14 +5,14 @@
 @license		GNU General Public License version 2 or later
 
 	
-	Items view form file
+	Car view form file
 -->
 <form>
-	<fieldset name="basic_configuration"
-		label="COM_MDCAR_CARS_GROUP_BASIC"
-	>
+	<fieldset name="basic_configuration" label="COM_MDCAR_CARS_GROUP_BASIC" >
 
-		<field name="kenteken" type="text"
+
+        <field name="mdcar_car_id" type="hidden" />
+        <field name="kenteken" type="text"
 			label="COM_MDCAR_CARS_FIELD_KENTEKEN"
 			description="COM_MDCAR_CARS_FIELD_KENTEKEN_DESC"
 			class="input-xlarge"

@@ -4,6 +4,7 @@ CREATE TABLE IF NOT EXISTS `#__mdcar_cars` (
   `merk` varchar(255) DEFAULT '',
   `type` varchar(255) DEFAULT '',
   `kmstand_start` varchar(255) DEFAULT '',
+  `kmstand` varchar(255) DEFAULT '',
   `winterbandencorrectie` varchar(255) DEFAULT '',
   `totaalverbuik` varchar(255) DEFAULT '',
   `totaalbedrag` varchar(255) DEFAULT '',
