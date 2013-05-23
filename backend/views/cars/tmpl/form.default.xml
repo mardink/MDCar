@@ -19,6 +19,7 @@
         <header name="kenteken" type="fieldsearchable" sortable="true" buttons="no" buttonclass="btn" />
         <header name="merk" type="field" sortable="true" buttons="no" buttonclass="btn" />
         <header name="type" type="field" sortable="true" buttons="no" buttonclass="btn" />
+        <header name="Brandstof" type="field" sortable="true" buttons="no" buttonclass="btn" />
         <header name="Huidige km stand" type="field" sortable="true" buttons="no" buttonclass="btn" />
         <header name="winterbandencorrectie" type="field" sortable="true" buttons="no" buttonclass="btn" />
         <header name="totaal verbuik (L)" type="field" sortable="true" buttons="no" buttonclass="btn" />
@@ -33,6 +34,7 @@
         <field name="kenteken" type="text" show_link="true" url="index.php?option=com_mdcar&amp;view=car&amp;id=[ITEM:ID]" />
         <field name="merk" type="field" />
         <field name="type" type="field" />
+        <field name="fuel" type="field" />
         <field name="kmstand" type="field" />
         <field name="winterbandencorrectie" type="field" />
         <field name="totaalverbuik" type="text" />
