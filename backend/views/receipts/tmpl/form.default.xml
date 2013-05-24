@@ -9,7 +9,7 @@
 <form
         type="browse"
         show_header="1"
-        show_filters="1"
+        show_filters="0"
         show_pagination="1"
         norows_placeholder="COM_MDCAR_COMMON_NORECORDS_RECEIPT"
         >
@@ -17,7 +17,7 @@
         <header name="ordering" type="ordering" sortable="true" tdwidth="1%" />
         <header name="mdcar_receipt_id" type="rowselect" tdwidth="20" />
         <header name="Tank datum" type="field" sortable="true" buttons="no" buttonclass="btn" />
-        <header name="kenteken" type="fieldsearchable" sortable="true" buttons="no" buttonclass="btn" />
+        <header name="kenteken" type="field" sortable="true" buttons="no" buttonclass="btn" />
         <header name="winterbanden" type="field" sortable="true" buttons="no" buttonclass="btn" />
         <header name="Brandstof" type="field" sortable="true" buttons="no" buttonclass="btn" />
         <header name="KM stand" type="field" sortable="true" buttons="no" buttonclass="btn" />
